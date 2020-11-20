@@ -1,0 +1,14 @@
+.banner {
+  background-image: linear-gradient(rgba(100, 100, 100, .25),rgba(100, 100, 100, .25)), asset-url('banner.jpeg');
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner h1 {
+  color: white;
+  font-family: 'Oswald';
+  letter-spacing: 2px;
+  font-size: 64px;
+}

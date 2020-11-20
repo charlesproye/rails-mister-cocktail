@@ -1,0 +1,14 @@
+<div class="container d-flex justify-content-center">
+    <div class = 'card-add mt-4 text-center px-3 py-3'>
+      <p>Ajouter une dose</p>
+      <div>
+        <%= simple_form_for([@cocktail, @dose]) do |f| %>
+        <%= f.input :description %>
+        <%= f.association :ingredient %>
+        <div class="text-center">
+          <%= f.submit 'Add', class: 'btn btn-primary px-2 py-1'%>
+        </div>
+      </div>
+      <% end %>
+    </div>
+</div>

@@ -11,3 +11,16 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+@import 'cocktails';
+
+//Polices
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&display=swap');
+$oswald: 'Oswald', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+
+body {
+  font-family: 'Oswald';
+  background-color: rgba(29, 74, 104,0.1);
+}
+

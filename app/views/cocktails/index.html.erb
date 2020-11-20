@@ -1,0 +1,17 @@
+<div class="banner d-flex justify-content-center align-items-center">
+  <h1>WIKICOCKTAILS</h1>
+</div>
+<div class="container">
+  <div class="card-container mt-5">
+    <% @cocktails.each do |cocktail| %>
+      <div class="card" style='background-image: linear-gradient(rgba(100, 100, 100, .4),rgba(100, 100, 100, .4)), url(<%= cocktail.picture %>);'>
+        <h5> <%= link_to cocktail.name.upcase, cocktail_path(cocktail), class: 'title-cocktail' %></h5>
+        <a data-method="delete" class="trash position" href=<%="#{cocktail_path(cocktail)}"%> ><i class="fas fa-trash icon"></i></a>
+      </div>
+    <% end %>
+    <div class="card add" style ="background-color: rgb(175, 114, 110);">
+      <a href=<%=  new_cocktail_path %>><i class="fas fa-3x fa-plus-circle icon mb-1"></i></a>
+      <%= link_to 'Add a cocktail', new_cocktail_path, class: 'title-cocktail'  %>
+    </div>
+  </div>
+</div>
