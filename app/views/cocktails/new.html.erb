@@ -1,14 +1,14 @@
 <%= render('shared/navbar') %>
 
-<div class="container d-flex justify-content-center">
+<div class="container d-flex justify-content-center mt-5">
     <div class = 'card-add mt-4 text-center px-3 py-3'>
-      <p>Créer votre cocktail</p>
+      <p>CREATE YOUR COCKTAIL</p>
       <div>
         <%= simple_form_for(@cocktail) do |f|%>
         <%= f.input :name, class: 'label' %>
         <%= f.input :photo, as: :file, class: 'label' %>
         <div class="text-center">
-          <%= f.submit 'Add', class: 'btn btn-primary px-2 py-1'%>
+          <%= f.submit 'Add', class: 'button-add px-2 py-1'%>
         </div>
       </div>
       <% end %>
