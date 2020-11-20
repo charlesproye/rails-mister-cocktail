@@ -4,7 +4,7 @@
       <div>
         <%= simple_form_for(@cocktail) do |f|%>
         <%= f.input :name, class: 'label' %>
-        <%= f.input :picture, class: 'label' %>
+        <%= f.input :photo, as: :file, class: 'label' %>
         <div class="text-center">
           <%= f.submit 'Add', class: 'btn btn-primary px-2 py-1'%>
         </div>
