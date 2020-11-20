@@ -5,13 +5,16 @@ const Modal = () => {
     const modal = document.querySelector('#menu div');
     console.log(modal)
     modal.classList.toggle('d-none');
+    modal.classList.toggle('d-flex');
+    modal.classList.toggle('justify-content-center');
+    modal.classList.toggle('align-items-center');
   });
 };
 
 
 const WhiteNavbar = () => {
     const navbar = document.querySelector('.index-navbar');
-    const title = document.querySelector('.big-title');
+    const title = document.querySelector('#big-title');
     if (navbar && title) {
       window.addEventListener('scroll', () => {
       if (window.scrollY >= window.innerHeight) {

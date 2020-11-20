@@ -24,3 +24,27 @@ body {
   background-color: rgba(29, 74, 104,0.1);
 }
 
+ul li i {
+  color: white;
+  padding-left: 30px;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+
+ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+footer {
+  background-color: rgb(175, 114, 110);
+  margin-top: 100px;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+}
