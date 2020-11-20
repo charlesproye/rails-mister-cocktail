@@ -15,8 +15,9 @@ url = open(filepath).read
 drinks = JSON.parse(url)
 
 Cocktail.destroy_all
+Ingredient.destroy_all
 
-for i in 1..5
+for i in 1..10
   Ingredient.create!(name: drinks["drinks"].sample["strIngredient1"]).save
 end
 

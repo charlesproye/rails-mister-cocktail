@@ -10,7 +10,7 @@ const Modal = () => {
 
 
 const WhiteNavbar = () => {
-    const navbar = document.querySelector('.navbar-lewagon');
+    const navbar = document.querySelector('.index-navbar');
     const title = document.querySelector('.big-title');
     if (navbar && title) {
       window.addEventListener('scroll', () => {
