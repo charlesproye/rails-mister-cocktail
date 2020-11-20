@@ -1,0 +1,37 @@
+.button-add {
+  background-color: rgb(175, 114, 110);
+  border-radius: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  box-shadow: 0 1px 1px rgba(100, 100, 100, .4);
+  color: white;
+  letter-spacing: .5px;
+  &:hover {
+    background-color: white;
+    border: 1px solid rgb(175, 114, 110);
+    color: rgb(175, 114, 110);
+    text-decoration: none;
+  }
+}
+
+.card-show .button-add {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.button-back {
+  background-color: rgba(100, 100, 100, .4);
+  border-radius: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  box-shadow: 0 1px 1px rgba(100, 100, 100, .4);
+  color: white;
+  letter-spacing: .5px;
+  &:hover {
+    background-color: white;
+    border: 1px solid rgba(100, 100, 100, .4);
+    color: rgba(100, 100, 100, .4);
+    text-decoration: none;
+  }
+}
